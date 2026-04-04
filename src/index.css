@@ -3,20 +3,54 @@ body {
   margin: 0;
 }
 
+body {
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(15, 15, 21) 0%, rgb(20, 21, 28) 25%, rgb(27, 28, 39) 51%, rgb(33, 35, 51) 100%);
+  -webkit-animation: AnimateBG 10s ease infinite;
+  animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .Header {
-  background-color: rgb(16, 17, 23);
+  background-color: rgba(16, 17, 23, 0.7);
+  backdrop-filter: blur(12px);
   display: flex;
   justify-content: right;
-  padding-right: 100px;
-  outline: 4px solid;
+  outline: 2px solid;
   outline-color: rgb(55, 56, 68);
+  position: sticky;
+  top: 0;
+  z-index: 30;
 }
 
 .HeaderButton {
   font-family: "JetBrains Mono";
-  width: 160px;
-  height: 60px;
-  font-size: 30px;
+  width: 120px;
+  height: 35px;
+  font-size: 20px;
   background-color: transparent;
   color: white;
   align-items: center;
@@ -24,17 +58,18 @@ body {
   cursor: pointer;
   transition: color 0.15s ease-in-out;
   margin: 20px;
+  user-select: none;
 }
 
 .HeaderButton:hover {
-  color: rgb(152, 156, 255);
+  color: rgb(152, 162, 255);
 }
 
 .HeaderButtonHome {
   font-family: "JetBrains Mono";
-  width: 500px;
-  height: 60px;
-  font-size: 45px;
+  width: 300px;
+  height: 35px;
+  font-size: 30px;
   background-color: transparent;
   color: white;
   align-items: center;
@@ -44,6 +79,7 @@ body {
   margin: 20px;
   font-weight: bold;
   margin-right: auto;
+  user-select: none;
 }
 
 .HeaderButtonHome:hover {
@@ -59,14 +95,15 @@ body {
 .IntroductionText {
     font-family: "JetBrains Mono";
     color: white;
-    font-size: 120px;
+    font-size: 80px;
     margin-right: 400px;
-    padding-top: 120px;
+    padding-top: 100px;
     user-select: none;
 }
 
 .PersonalPicture {
     border-radius: 999px;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
+    user-select: none;
 }
