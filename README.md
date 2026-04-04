@@ -1,2 +1,0 @@
-# daniilcodes.dev
-My portfolio
