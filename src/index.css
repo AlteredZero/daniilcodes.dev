@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(20, 21, 28);
+  margin: 0;
+}
+
+.Header {
+  background-color: rgb(16, 17, 23);
+  display: flex;
+  justify-content: right;
+  padding-right: 100px;
+  outline: 4px solid;
+  outline-color: rgb(55, 56, 68);
+}
+
+.HeaderButton {
+  font-family: "JetBrains Mono";
+  width: 160px;
+  height: 60px;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+  border: transparent;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+  margin: 20px;
+}
+
+.HeaderButton:hover {
+  color: rgb(152, 156, 255);
+}
+
+.HeaderButtonHome {
+  font-family: "JetBrains Mono";
+  width: 500px;
+  height: 60px;
+  font-size: 45px;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+  border: transparent;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+  margin: 20px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.HeaderButtonHome:hover {
+  color: rgb(152, 156, 255);
+}
+
+.Profile {
+  display: flex;
+  justify-content: center;
+  padding-top: 250px;
+}
+
+.IntroductionText {
+    font-family: "JetBrains Mono";
+    color: white;
+    font-size: 120px;
+    margin-right: 400px;
+    padding-top: 120px;
+    user-select: none;
+}
+
+.PersonalPicture {
+    border-radius: 999px;
+    width: 700px;
+    height: 700px;
+}
