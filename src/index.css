@@ -46,6 +46,7 @@ body {
   backdrop-filter: blur(12px);
   display: flex;
   justify-content: right;
+  align-items: center;
   outline: 3px solid;
   outline-color: rgb(55, 56, 68);
   position: sticky;
@@ -55,9 +56,11 @@ body {
 
 .HeaderButton {
   font-family: "JetBrains Mono", monospace;
-  width: 120px;
-  height: 35px;
-  font-size: 25px;
+  max-width: 120px;
+  max-height: 40px;
+  height: 100%;
+  font-size: 23px;
+  width: 100%;
   background-color: transparent;
   color: white;
   align-items: center;
@@ -73,21 +76,30 @@ body {
   color: rgb(152, 162, 255);
 }
 
-.HeaderButtonHome {
-  font-family: "JetBrains Mono", monospace;
-  width: 300px;
-  height: 35px;
-  font-size: 30px;
-  background-color: transparent;
-  color: white;
-  align-items: center;
-  border: transparent;
-  cursor: pointer;
-  transition: color 0.15s ease-in-out;
+.HeaderLogo {
+  max-width: 40px;
+  max-height: 40px;
+  height: 100%;
   margin: 20px;
-  font-weight: bold;
-  margin-right: auto;
+  margin-left: 30px;
+  width: 100%;
   user-select: none;
+  cursor: pointer;
+  margin-right: auto;
+  transition: filter 0.15s ease;
+}
+
+.HeaderLogo:hover {
+  max-width: 40px;
+  max-height: 40px;
+  height: 100%;
+  margin: 20px;
+  margin-left: 30px;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  margin-right: auto;
+  filter: brightness(0.7)
 }
 
 .HeaderButtonHome:hover {
@@ -100,33 +112,68 @@ body {
   align-items: center;
   gap: 80px;
   padding-top: 200px;
+  margin-bottom: 200px;
 }
 
 .IntroductionHeaderText {
-    font-family: "JetBrains Mono", monospace;
-    color: white;
-    font-size: 80px;
-    margin: 0;
-    margin-bottom: 20px;
-    user-select: none;
-    margin-bottom: 50px;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: 20px;
+  user-select: none;
+  margin-bottom: 50px;
 }
 
 .PersonalPicture {
-    border-radius: 999px;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 100px;
+  border-radius: 999px;
+  max-width: 400px;
+  max-height: 400px;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 100px;
+  width: 100%;
 } 
 
 .IntroductionText {
-    font-family: "JetBrains Mono", monospace;
-    color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    margin: 0;
-    user-select: none;
-    width: 600px;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  user-select: none;
+  max-width: 600px;
+  width: 100%;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  outline: 3px solid;
+  outline-color: rgb(55, 56, 68);
+}
+
+.AboutHeader {
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  user-select: none;
+  margin-bottom: 30px;
+}
+
+.AboutText {
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 25px;
+  user-select: none;
+  max-width: 950px;
+  width: 100%;
 }
