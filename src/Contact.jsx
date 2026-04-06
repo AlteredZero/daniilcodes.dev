@@ -4,7 +4,7 @@ import TypewriterOnScroll from "./TypewriterOnScroll";
 
 export default function About() {
   return(
-    <div className="Contact">
+    <div className="Contact" id="contact">
       <h1 className="ContactHeader">Contact</h1>
       <div className="ContactTextWrapper">
         <TypewriterOnScroll className="ContactText" text="Want to reach out? Shoot me an email or a message."speed={10}/>

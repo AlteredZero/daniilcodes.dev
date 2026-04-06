@@ -6,7 +6,7 @@ export default function About() {
   const openImage = (src) => {setSelectedImage(src);};
   return(
     <>
-      <div className="Projects">
+      <div className="Projects" id="projects">
         <h1 className="ProjectsHeader">Projects</h1>
         <div className="ProjectsHeaderInfo">
           <TypewriterOnScroll className="ProjectsHeaderInfo" text="These projects reflect real production experience, including commercial releases on Steam, multiple published Roblox experiences, and ongoing Unreal Engine 5 development; from early prototypes to polished, release-ready builds."speed={10}/>

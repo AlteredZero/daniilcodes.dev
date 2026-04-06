@@ -2,7 +2,7 @@ import TypewriterOnScroll from "./TypewriterOnScroll";
 
 export default function About() {
   return(
-    <div className="About">
+    <div className="About" id="about">
       <h1 className="AboutHeader">About</h1>
       <div className="AboutTextWrapper">
         <TypewriterOnScroll
