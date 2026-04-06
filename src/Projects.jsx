@@ -75,7 +75,7 @@ export default function About() {
 
           <div className="ProjectCard">
             <h1 className="ProjectTitle">My Portfolio</h1>
-            <a href="" target="_blank" className="Link">My Portfolio Website</a>
+            <a href="https://daniilcodes.dev/" target="_blank" className="Link">My Portfolio Website</a>
 
             <p className="ProjectDescription">A modern portfolio website built using React, Vite, and custom HTML + CSS, designed to showcase projects, skills, and development experience. Focused on clean UI, performance, and responsive design. You are on it now!</p>
 
