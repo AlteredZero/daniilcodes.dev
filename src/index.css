@@ -366,6 +366,7 @@ html {
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  user-select: none;
 }
 
 .ProjectImage:hover {
