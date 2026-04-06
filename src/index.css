@@ -5,6 +5,7 @@ body {
   background-image: linear-gradient(-45deg, rgb(15, 15, 21) 0%, rgb(20, 21, 28) 25%, rgb(27, 28, 39) 51%, rgb(33, 35, 51) 100%);
   -webkit-animation: AnimateBG 10s ease infinite;
   animation: AnimateBG 10s ease infinite;
+  overflow-x: hidden;
 }
 
 html {
@@ -220,6 +221,8 @@ html {
   height: 460px;
   max-width: 650px;
   margin-bottom: 200px;
+  outline: 2px solid;
+  outline-color: rgb(55, 56, 68);
 }
 
 .Tools {
@@ -230,6 +233,8 @@ html {
   height: 460px;
   max-width: 650px;
   margin-bottom: 200px;
+  outline: 2px solid;
+  outline-color: rgb(55, 56, 68);
 }
 
 .SkillsHeader {
@@ -323,6 +328,8 @@ html {
   margin-top: 50px;
   width: 100%;
   max-width: 650px;
+  outline: 2px solid;
+  outline-color: rgb(55, 56, 68);
 }
 
 .ProjectTitle {
@@ -367,6 +374,8 @@ html {
   cursor: pointer;
   transition: transform 0.2s ease;
   user-select: none;
+  outline: 2px solid;
+  outline-color: rgb(55, 56, 68);
 }
 
 .ProjectImage:hover {
@@ -506,6 +515,8 @@ html {
   cursor: pointer;
   transition: transform 0.2s ease;
   flex: 0 0 auto;
+  outline: 2px solid;
+  outline-color: rgb(55, 56, 68);
 }
 
 .LinkBox:hover {
@@ -539,4 +550,141 @@ html {
   width: 100%;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .Header {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .HeaderButton {
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 10px;
+  }
+
+  .HeaderLogo {
+    margin: 10px;
+    max-width: 30px;
+  }
+
+  .Profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding-top: 120px;
+    margin-bottom: 200px;
+  }
+
+  .IntroductionHeaderText {
+    font-size: 40px;
+  }
+
+  .IntroductionText {
+    font-size: 18px;
+    min-height: auto;
+  }
+
+  .PersonalPicture {
+    margin-left: 0;
+    max-width: 250px;
+  }
+
+  .About {
+    padding-top: 120px;
+  }
+
+  .AboutHeader {
+    font-size: 30px;
+  }
+
+  .AboutText {
+    font-size: 16px;
+  }
+
+  .AboutTextWrapper {
+    padding: 0 20px;
+    min-height: auto;
+  }
+
+  .Skills,
+  .Tools {
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .SkillsHeader,
+  .ToolsHeader {
+    font-size: 24px;
+  }
+
+  .SkillsText,
+  .ToolsText {
+    font-size: 16px;
+  }
+
+  .Projects {
+    padding-top: 120px;
+  }
+
+  .ProjectsHeader {
+    font-size: 30px;
+  }
+
+  .ProjectsHeaderInfo {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .ProjectTitle {
+    font-size: 22px;
+  }
+
+  .ProjectDescription {
+    font-size: 16px;
+  }
+
+  .ProjectImageSet {
+    justify-content: center;
+  }
+
+  .ProjectImage {
+    max-width: 140px;
+  }
+
+  .Contact {
+    padding-top: 120px;
+  }
+
+  .ContactHeader {
+    font-size: 30px;
+  }
+
+  .ContactText {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .LinkBox {
+    max-width: 100%;
+  }
+
+  .LinkHeader {
+    font-size: 22px;
+  }
+
+  .LinkIcon {
+    font-size: 30px;
+  }
+
+  .LinkDescription {
+    font-size: 16px;
+  }
+
+  .FooterText {
+    font-size: 13px;
+    padding: 0 20px;
+  }
 }
