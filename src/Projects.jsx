@@ -31,16 +31,16 @@ export default function About() {
             <p className="ProjectDescription"><strong>Outcome:</strong> Released on Steam as a commercial product</p>
 
             <div className="ProjectImageSet">
-              <img src="../assets/LDSS2NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS2NEW.png")}></img>
-              <img src="../assets/LDSS1NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS1NEW.png")}></img>
-              <img src="../assets/LDSS4NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS4NEW.png")}></img>
-              <img src="../assets/LDSS5NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS5NEW.png")}></img>
-              <img src="../assets/LDSS8NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS8NEW.png")}></img>
+              <img src="/assets/LDSS2NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS2NEW.png")}></img>
+              <img src="/assets/LDSS1NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS1NEW.png")}></img>
+              <img src="/assets/LDSS4NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS4NEW.png")}></img>
+              <img src="/assets/LDSS5NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS5NEW.png")}></img>
+              <img src="/assets/LDSS8NEW.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS8NEW.png")}></img>
 
-              <img src="../assets/LDSS3.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS3.png")}></img>
-              <img src="../assets/LDSS1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS1.png")}></img>
-              <img src="../assets/LDSS2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS2.png")}></img>
-              <img src="../assets/LDSS4.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/LDSS4.png")}></img>
+              <img src="/assets/LDSS3.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS3.png")}></img>
+              <img src="/assets/LDSS1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS1.png")}></img>
+              <img src="/assets/LDSS2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS2.png")}></img>
+              <img src="/assets/LDSS4.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/LDSS4.png")}></img>
             </div>
           </div>
 
@@ -63,13 +63,13 @@ export default function About() {
             <p className="ProjectDescription"><strong>Outcome:</strong> Released on Steam as a commercial product</p>
 
             <div className="ProjectImageSet">
-              <img src="../assets/SS2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/SS2.png")}></img>
-              <img src="../assets/SS3.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/SS3.png")}></img>
-              <img src="../assets/SS4.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/SS4.png")}></img>
-              <img src="../assets/SS5.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/SS5.png")}></img>
-              <img src="../assets/SS6.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/SS6.png")}></img>
-              <img src="../assets/clickaduckSS1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/clickaduckSS1.png")}></img>
-              <img src="../assets/clickaduckSS2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/clickaduckSS2.png")}></img>
+              <img src="/assets/SS2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/SS2.png")}></img>
+              <img src="/assets/SS3.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/SS3.png")}></img>
+              <img src="/assets/SS4.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/SS4.png")}></img>
+              <img src="/assets/SS5.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/SS5.png")}></img>
+              <img src="/assets/SS6.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/SS6.png")}></img>
+              <img src="/assets/clickaduckSS1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/clickaduckSS1.png")}></img>
+              <img src="/assets/clickaduckSS2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/clickaduckSS2.png")}></img>
             </div>
           </div>
 
@@ -92,8 +92,8 @@ export default function About() {
             <p className="ProjectDescription"><strong>Outcome:</strong> Live portfolio used to showcase development work</p>
 
             <div className="ProjectImageSet">
-              <img src="../assets/MyPortfolioImage.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/MyPortfolioImage.png")}></img>
-              <img src="../assets/MyPortfolioSS1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/MyPortfolioSS1.png")}></img>
+              <img src="/assets/MyPortfolioImage.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/MyPortfolioImage.png")}></img>
+              <img src="/assets/MyPortfolioSS1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/MyPortfolioSS1.png")}></img>
             </div>
           </div>
 
@@ -115,9 +115,9 @@ export default function About() {
             <p className="ProjectDescription"><strong>Status:</strong> In active development</p>
 
             <div className="ProjectImageSet">
-              <img src="../assets/Noesis1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/Noesis1.png")}></img>
-              <img src="../assets/Noesis2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/Noesis2.png")}></img>
-              <img src="../assets/Noesis3.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("../assets/Noesis3.png")}></img>
+              <img src="/assets/Noesis1.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/Noesis1.png")}></img>
+              <img src="/assets/Noesis2.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/Noesis2.png")}></img>
+              <img src="/assets/Noesis3.png" alt="Project Image" className="ProjectImage" onClick={() => openImage("/assets/Noesis3.png")}></img>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <img src="../assets/PersonalPicture2cropped.jpg" alt="A Picture Of Me" className="PersonalPicture"/>
+      <img src="/assets/PersonalPicture2cropped.jpg" alt="A Picture Of Me" className="PersonalPicture"/>
     </div>
   )
 }
