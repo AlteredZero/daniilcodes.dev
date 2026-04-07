@@ -18,6 +18,10 @@ html {
   overflow-x: hidden;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 @-webkit-keyframes AnimateBG {
   0% {
     background-position: 0% 50%;
@@ -728,4 +732,31 @@ html {
 p, h1, li {
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+
+  .ProjectsContainer,
+  .LinksContainer,
+  .SkillsToolsContainer {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ProjectCard,
+  .LinkBox,
+  .Skills,
+  .Tools {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
