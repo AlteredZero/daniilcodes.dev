@@ -100,7 +100,7 @@ html {
   transition: color 0.15s ease-in-out;
   margin: 20px;
   margin-left: 50px;
-  user-select: none;
+  
 }
 
 .HeaderButton:hover {
@@ -114,7 +114,7 @@ html {
   margin: 20px;
   margin-left: 30px;
   width: 100%;
-  user-select: none;
+  
   cursor: pointer;
   margin-right: auto;
   transition: filter 0.15s ease;
@@ -127,7 +127,7 @@ html {
   margin: 20px;
   margin-left: 30px;
   width: 100%;
-  user-select: none;
+  
   cursor: pointer;
   margin-right: auto;
   filter: brightness(0.7)
@@ -152,7 +152,7 @@ html {
   font-size: 80px;
   margin: 0;
   margin-bottom: 20px;
-  user-select: none;
+  
   margin-bottom: 50px;
 }
 
@@ -162,7 +162,7 @@ html {
   max-height: 400px;
   height: 100%;
   object-fit: cover;
-  user-select: none;
+  
   margin-left: 100px;
   width: 100%;
 } 
@@ -173,7 +173,7 @@ html {
   font-size: 24px;
   line-height: 1.5;
   margin: 0;
-  user-select: none;
+  
   max-width: 600px;
   width: 100%;
   min-height: 250px;
@@ -194,7 +194,7 @@ html {
   color: white;
   font-size: 40px;
   margin: 0;
-  user-select: none;
+  
   margin-bottom: 30px;
 }
 
@@ -203,7 +203,7 @@ html {
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
-  user-select: none;
+  
   white-space: pre-line;
 }
 
@@ -260,7 +260,7 @@ html {
   color: white;
   font-size: 30px;
   margin: 30px;
-  user-select: none;
+  
   margin-bottom: 20px;
 }
 
@@ -269,7 +269,7 @@ html {
   color: white;
   font-size: 30px;
   margin: 30px;
-  user-select: none;
+  
   margin-bottom: 20px;
 }
 
@@ -279,7 +279,7 @@ html {
   font-size: 20px;
   line-height: 1.5;
   margin: 30px;
-  user-select: none;
+  
   max-width: 950px;
   width: 100%;
 }
@@ -291,7 +291,7 @@ html {
   line-height: 1.5;
   margin: 30px;
   margin-bottom: 25px;
-  user-select: none;
+  
   max-width: 950px;
   width: 100%;
 }
@@ -318,7 +318,7 @@ html {
   color: white;
   font-size: 40px;
   margin: 0;
-  user-select: none;
+  
   margin-bottom: 30px;
 }
 
@@ -327,7 +327,7 @@ html {
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
-  user-select: none;
+  
 }
 
 .ProjectsHeaderInfo {
@@ -355,7 +355,7 @@ html {
   color: white;
   font-size: 30px;
   margin: 30px;
-  user-select: none;
+  
   margin-bottom: 10px;
   width: 100%;
 }
@@ -367,7 +367,7 @@ html {
   line-height: 1.5;
   margin: 30px;
   margin-top: 5px;
-  user-select: none;
+  
   max-width: 950px;
   width: 100%;
 }
@@ -380,7 +380,7 @@ html {
   font-size: 20px;
   margin-left: 30px;
   margin-bottom: 10px;
-  user-select: none;
+  
 }
 
 .ProjectImage {
@@ -391,7 +391,7 @@ html {
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  user-select: none;
+  
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
   object-fit: cover;
@@ -456,7 +456,7 @@ html {
   color: white;
   font-size: 40px;
   margin: 0;
-  user-select: none;
+  
   margin-bottom: 30px;
 }
 
@@ -465,7 +465,7 @@ html {
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
-  user-select: none;
+  
   text-align: center;
 }
 
@@ -483,7 +483,7 @@ html {
   color: white;
   font-size: 30px;
   margin: 10px;
-  user-select: none;
+  
   margin-bottom: 10px;
   width: 100%;
 }
@@ -507,7 +507,7 @@ html {
   line-height: 1.5;
   margin: 30px;
   margin-top: 5px;
-  user-select: none;
+  
   max-width: 950px;
   width: 100%;
 }
@@ -546,7 +546,7 @@ html {
   color: white;
   font-size: 30px;
   margin: 30px;
-  user-select: none;
+  
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
@@ -563,7 +563,7 @@ html {
   color: rgb(190, 190, 190);
   font-size: 15px;
   margin: 50px;
-  user-select: none;
+  
   max-width: 700px;
   width: 100%;
   justify-content: center;
