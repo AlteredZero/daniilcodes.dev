@@ -3,6 +3,11 @@
   max-width: 100%;
 }
 
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
   background-color: rgb(20, 21, 28);
   margin: 0;
@@ -604,6 +609,7 @@ html {
 
   .About {
     padding-top: 120px;
+    padding-bottom: 80px;
   }
 
   .AboutHeader {
@@ -729,9 +735,9 @@ html {
   width: auto;
 }
 
-p, h1, li {
-  word-wrap: break-word;
+p, h1, h2, li {
   overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 @media (max-width: 768px) {
@@ -752,6 +758,7 @@ p, h1, li {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    min-width: 0;
   }
 }
 
@@ -759,4 +766,16 @@ img, video {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.ProjectDescription {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.About,
+.Projects,
+.Contact,
+.Profile {
+  scroll-margin-top: 100px;
 }
