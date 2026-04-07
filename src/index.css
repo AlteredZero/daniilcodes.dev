@@ -16,11 +16,13 @@ body {
   -webkit-animation: AnimateBG 10s ease infinite;
   animation: AnimateBG 10s ease infinite;
   overflow-x: hidden;
+  width: 100%;
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 
 #root {
@@ -233,7 +235,8 @@ html {
   border-radius: 20px;
   margin-top: 50px;
   width: 100%;
-  height: 460px;
+  height: auto;
+  min-height: 460px;
   max-width: 650px;
   margin-bottom: 200px;
   outline: 2px solid;
@@ -629,6 +632,7 @@ html {
   .Skills,
   .Tools {
     height: auto;
+    min-height: 460px;
     margin-bottom: 100px;
   }
 
@@ -780,4 +784,20 @@ img, video {
 .Contact,
 .Profile {
   scroll-margin-top: 100px;
+}
+
+.SkillsText,
+.ToolsText {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.AboutTextWrapper {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .About {
+    padding-bottom: 120px;
+  }
 }
