@@ -75,6 +75,7 @@ p, h1, h2, li {
   left: 0;
   width: 100%;
   z-index: 30;
+  overflow-x: hidden;
 }
 .HeaderLogo {
   max-width: 40px;
@@ -84,6 +85,7 @@ p, h1, h2, li {
   margin-left: 30px;
   cursor: pointer;
   transition: filter 0.15s ease;
+  flex-shrink: 0;
 }
 .HeaderLogo:hover {
   filter: brightness(0.7);
@@ -103,6 +105,10 @@ p, h1, h2, li {
   margin: 20px;
   margin-left: 10px;
   margin-right: auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .HeaderButtonName:hover {
   color: rgb(149, 149, 149);
@@ -121,6 +127,7 @@ p, h1, h2, li {
   transition: color 0.15s ease-in-out;
   margin: 10px;
   width: auto;
+  flex-shrink: 0;
 }
 .HeaderButton:hover,
 .HeaderButtonHome:hover {
@@ -493,13 +500,20 @@ p, h1, h2, li {
     justify-content: space-between;
     padding: 0 10px;
   }
-  .HeaderButton {
+  .HeaderButtonName {
     font-size: 16px;
-    margin: 10px;
+    max-width: 55%;
+    margin: 8px;
+    margin-right: auto;
+  }
+  .HeaderButton {
+    font-size: 14px;
+    max-width: none;
+    margin: 8px;
   }
   .HeaderLogo {
-    margin: 10px;
-    max-width: 30px;
+    margin: 8px;
+    max-width: 28px;
   }
   .Profile {
     flex-direction: column;
