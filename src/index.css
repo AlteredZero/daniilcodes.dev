@@ -2,55 +2,36 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-
-section {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-body {
-  background-color: rgb(20, 21, 28);
-  margin: 0;
-  background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, rgb(15, 15, 21) 0%, rgb(20, 21, 28) 25%, rgb(27, 28, 39) 51%, rgb(33, 35, 51) 100%);
-  -webkit-animation: AnimateBG 10s ease infinite;
-  animation: AnimateBG 10s ease infinite;
-  overflow-x: hidden;
-  width: 100%;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
 }
-
+body {
+  background-color: rgb(20, 21, 28);
+  background-image: linear-gradient(-45deg, rgb(15, 15, 21) 0%, rgb(20, 21, 28) 25%, rgb(27, 28, 39) 51%, rgb(33, 35, 51) 100%);
+  background-size: 300% 300%;
+  -webkit-animation: AnimateBG 10s ease infinite;
+  animation: AnimateBG 10s ease infinite;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 #root {
   overflow-x: hidden;
 }
-
-@-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+section {
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+p, h1, h2, li {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 @font-face {
@@ -62,36 +43,57 @@ html {
   font-display: swap;
 }
 
-.cursor {
-  animation: blink 0.8s infinite;
+@-webkit-keyframes AnimateBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-
+@keyframes AnimateBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
+.cursor {
+  animation: blink 0.8s infinite;
+}
 
-
+/* Header */
 .Header {
   background-color: rgba(16, 17, 23, 0.7);
   backdrop-filter: blur(12px);
   display: flex;
-  justify-content: right;
   align-items: center;
+  flex-wrap: wrap;
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 30;
 }
-
-.HeaderButton {
+.HeaderLogo {
+  max-width: 40px;
+  max-height: 40px;
+  height: 100%;
+  margin: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+.HeaderLogo:hover {
+  filter: brightness(0.7);
+}
+.HeaderButtonName {
   font-family: "JetBrains Mono", monospace;
-  max-width: 120px;
+  max-width: 300px;
   max-height: 40px;
   height: 100%;
   font-size: 23px;
-  width: 100%;
   background-color: transparent;
   color: white;
   align-items: center;
@@ -99,44 +101,52 @@ html {
   cursor: pointer;
   transition: color 0.15s ease-in-out;
   margin: 20px;
-  margin-left: 50px;
-  
+  margin-left: 10px;
+  margin-right: auto;
 }
-
-.HeaderButton:hover {
-  color: rgb(152, 162, 255);
+.HeaderButtonName:hover {
+  color: rgb(149, 149, 149);
 }
-
-.HeaderLogo {
-  max-width: 40px;
+.HeaderButton {
+  font-family: "JetBrains Mono", monospace;
+  max-width: 120px;
   max-height: 40px;
   height: 100%;
-  margin: 20px;
-  margin-left: 30px;
-  width: 100%;
-  
+  font-size: 23px;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+  border: transparent;
   cursor: pointer;
-  margin-right: auto;
-  transition: filter 0.15s ease;
+  transition: color 0.15s ease-in-out;
+  margin: 10px;
+  width: auto;
 }
-
-.HeaderLogo:hover {
-  max-width: 40px;
-  max-height: 40px;
-  height: 100%;
-  margin: 20px;
-  margin-left: 30px;
-  width: 100%;
-  
-  cursor: pointer;
-  margin-right: auto;
-  filter: brightness(0.7)
-}
-
+.HeaderButton:hover,
 .HeaderButtonHome:hover {
-  color: rgb(152, 156, 255);
+  color: rgb(149, 149, 149);
 }
 
+/* Shared section headers */
+.AboutHeader,
+.ProjectsHeader,
+.ContactHeader {
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.SkillsHeader,
+.ToolsHeader {
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 30px;
+  margin: 30px;
+  margin-bottom: 20px;
+}
+
+/* Profile */
 .Profile {
   display: flex;
   justify-content: center;
@@ -145,40 +155,34 @@ html {
   padding-top: 200px;
   margin-bottom: 400px;
 }
-
 .IntroductionHeaderText {
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 80px;
   margin: 0;
-  margin-bottom: 20px;
-  
   margin-bottom: 50px;
 }
-
 .PersonalPicture {
   border-radius: 999px;
   max-width: 400px;
   max-height: 400px;
   height: 100%;
-  object-fit: cover;
-  
-  margin-left: 100px;
   width: 100%;
-} 
-
+  object-fit: cover;
+  margin-left: 100px;
+}
 .IntroductionText {
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 24px;
   line-height: 1.5;
   margin: 0;
-  
   max-width: 600px;
   width: 100%;
   min-height: 250px;
 }
 
+/* About */
 .About {
   display: flex;
   flex-direction: column;
@@ -187,33 +191,25 @@ html {
   padding-top: 200px;
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
+  scroll-margin-top: 100px;
 }
-
-.AboutHeader {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-size: 40px;
-  margin: 0;
-  
-  margin-bottom: 30px;
-}
-
 .AboutText {
   font-family: "JetBrains Mono", monospace;
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
-  
   white-space: pre-line;
 }
-
 .AboutTextWrapper {
   width: 100%;
   max-width: 950px;
   margin: 0 auto;
+  margin-bottom: 60px;
   min-height: 600px;
+  padding: 0 20px;
 }
 
+/* Skills / Tools */
 .SkillsToolsContainer {
   display: flex;
   justify-content: center;
@@ -222,88 +218,50 @@ html {
   width: 100%;
   max-width: 1500px;
 }
-
-@media (max-width: 900px) {
-  .SkillsToolsContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.Skills {
-  background-color: rgb(37, 39, 52);
-  border-radius: 20px;
-  margin-top: 50px;
-  width: 100%;
-  height: auto;
-  min-height: 460px;
-  max-width: 650px;
-  margin-bottom: 200px;
-  outline: 2px solid;
-  outline-color: rgb(55, 56, 68);
-}
-
+.Skills,
 .Tools {
   background-color: rgb(37, 39, 52);
   border-radius: 20px;
   margin-top: 50px;
-  width: 100%;
-  height: 460px;
-  max-width: 650px;
   margin-bottom: 200px;
+  width: 100%;
+  max-width: 650px;
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
+  min-width: 0;
 }
-
-.SkillsHeader {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-size: 30px;
-  margin: 30px;
-  
-  margin-bottom: 20px;
+.Skills {
+  height: auto;
+  min-height: 460px;
 }
-
-.ToolsHeader {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-size: 30px;
-  margin: 30px;
-  
-  margin-bottom: 20px;
+.Tools {
+  height: 460px;
 }
-
-.SkillsText {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 30px;
-  
-  max-width: 950px;
-  width: 100%;
-}
-
+.SkillsText,
 .ToolsText {
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 20px;
   line-height: 1.5;
   margin: 30px;
-  margin-bottom: 25px;
-  
   max-width: 950px;
   width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.ToolsText {
+  margin-bottom: 25px;
 }
 
+/* Projects */
 .Projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 200px;
+  scroll-margin-top: 100px;
 }
-
 .ProjectsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -312,31 +270,17 @@ html {
   width: 100%;
   max-width: 1400px;
 }
-
-.ProjectsHeader {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-size: 40px;
-  margin: 0;
-  
-  margin-bottom: 30px;
-}
-
 .ProjectsHeaderInfo {
   font-family: "JetBrains Mono", monospace;
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
-  
-}
-
-.ProjectsHeaderInfo {
   width: 100%;
   max-width: 950px;
   margin: 0;
   margin-bottom: 25px;
+  padding: 0 20px;
 }
-
 .ProjectCard {
   display: flex;
   flex-wrap: wrap;
@@ -348,30 +292,31 @@ html {
   max-width: 650px;
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
+  min-width: 0;
 }
-
 .ProjectTitle {
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 30px;
   margin: 30px;
-  
   margin-bottom: 10px;
   width: 100%;
 }
-
-.ProjectDescription {
+.ProjectDescription,
+.LinkDescription {
   font-family: "JetBrains Mono", monospace;
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
   margin: 30px;
   margin-top: 5px;
-  
   max-width: 950px;
   width: 100%;
 }
-
+.ProjectDescription {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 .Link {
   flex-basis: 100%;
   display: block;
@@ -380,9 +325,7 @@ html {
   font-size: 20px;
   margin-left: 30px;
   margin-bottom: 10px;
-  
 }
-
 .ProjectImage {
   width: 100%;
   height: auto;
@@ -391,16 +334,13 @@ html {
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
   object-fit: cover;
 }
-
 .ProjectImage:hover {
   transform: scale(1.05);
 }
-
 .ProjectImageSet {
   margin: 30px;
   margin-top: 0px;
@@ -411,26 +351,23 @@ html {
   justify-content: flex-start;
   gap: 20px;
 }
-
 .ImageModal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
-
 .ModalImage {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
 }
-
 .CloseButton {
   position: absolute;
   top: 20px;
@@ -440,6 +377,7 @@ html {
   cursor: pointer;
 }
 
+/* Contact */
 .Contact {
   margin-top: 200px;
   display: flex;
@@ -449,79 +387,52 @@ html {
   padding-top: 200px;
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
+  scroll-margin-top: 100px;
 }
-
-.ContactHeader {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-size: 40px;
-  margin: 0;
-  
-  margin-bottom: 30px;
-}
-
 .ContactText {
   font-family: "JetBrains Mono", monospace;
   color: rgb(190, 190, 190);
   font-size: 20px;
   line-height: 1.5;
-  
   text-align: center;
 }
-
 .ContactTextWrapper {
   width: 100%;
   max-width: 950px;
   margin-bottom: 40px;
-
+  padding: 0 20px;
   display: flex;
   justify-content: center;
 }
 
+/* Links */
 .LinkHeader {
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 30px;
   margin: 10px;
-  
   margin-bottom: 10px;
   width: 100%;
 }
-
 .LinkTop {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 12px;
   margin: 20px 30px 0 30px;
 }
-
 .LinkIcon {
   font-size: 50px;
   color: white;
 }
-
-.LinkDescription {
-  font-family: "JetBrains Mono", monospace;
-  color: rgb(190, 190, 190);
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 30px;
-  margin-top: 5px;
-  
-  max-width: 950px;
-  width: 100%;
-}
-
 .LinksContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 1100px;
   width: 100%;
+  max-width: 1100px;
   margin-bottom: 80px;
 }
-
 .LinkBox {
   display: flex;
   flex-direction: column;
@@ -535,59 +446,61 @@ html {
   flex: 0 0 auto;
   outline: 2px solid;
   outline-color: rgb(55, 56, 68);
+  min-width: 0;
 }
-
 .LinkBox:hover {
   transform: scale(1.05);
 }
-
 .ExtraLinksHeader {
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 30px;
   margin: 30px;
-  
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
 }
 
+/* Footer */
 .Footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  width: 100%;
 }
-
 .FooterText {
   font-family: "JetBrains Mono", monospace;
   color: rgb(190, 190, 190);
   font-size: 15px;
-  margin: 50px;
-  
   max-width: 700px;
   width: 100%;
-  justify-content: center;
   text-align: center;
+  margin: 8px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .SkillsToolsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
-
   .Header {
     justify-content: space-between;
     padding: 0 10px;
   }
-
   .HeaderButton {
     font-size: 16px;
     margin: 10px;
-    margin-left: 10px;
   }
-
   .HeaderLogo {
     margin: 10px;
     max-width: 30px;
   }
-
   .Profile {
     flex-direction: column;
     text-align: center;
@@ -595,168 +508,74 @@ html {
     padding-top: 120px;
     margin-bottom: 200px;
   }
-
   .IntroductionHeaderText {
     font-size: 40px;
   }
-
   .IntroductionText {
     font-size: 18px;
     min-height: auto;
   }
-
   .PersonalPicture {
     margin-left: 0;
+    width: 80%;
     max-width: 250px;
   }
-
   .About {
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
-
   .AboutHeader {
     font-size: 30px;
   }
-
   .AboutText {
     font-size: 16px;
     margin-bottom: 30px;
   }
-
   .AboutTextWrapper {
     padding: 0 20px;
     min-height: auto;
   }
-
   .Skills,
   .Tools {
     height: auto;
     min-height: 460px;
     margin-bottom: 100px;
   }
-
   .SkillsHeader,
   .ToolsHeader {
     font-size: 24px;
   }
-
   .SkillsText,
   .ToolsText {
     font-size: 16px;
   }
-
   .Projects {
     padding-top: 120px;
   }
-
   .ProjectsHeader {
     font-size: 30px;
   }
-
   .ProjectsHeaderInfo {
     font-size: 16px;
     padding: 0 20px;
   }
-
-  .ProjectTitle {
-    font-size: 22px;
-  }
-
-  .ProjectDescription {
-    font-size: 16px;
-  }
-
-  .ProjectImageSet {
-    justify-content: center;
-  }
-
-  .ProjectImage {
-    max-width: 140px;
-  }
-
-  .Contact {
-    padding-top: 120px;
-  }
-
-  .ContactHeader {
-    font-size: 30px;
-  }
-
-  .ContactText {
-    font-size: 16px;
-    padding: 0 20px;
-  }
-
-  .LinkBox {
-    max-width: 100%;
-  }
-
-  .LinkHeader {
-    font-size: 22px;
-  }
-
-  .LinkIcon {
-    font-size: 30px;
-  }
-
-  .LinkDescription {
-    font-size: 16px;
-  }
-
-  .FooterText {
-    font-size: 13px;
-    padding: 0 20px;
-  }
-}
-
-.ProjectCard,
-.LinkBox,
-.Skills,
-.Tools {
-  min-width: 0;
-}
-
-.AboutTextWrapper,
-.ContactTextWrapper,
-.ProjectsHeaderInfo {
-  padding: 0 20px;
-}
-
-@media (max-width: 768px) {
-  .PersonalPicture {
-    margin-left: 0;
-    width: 80%;
-    max-width: 250px;
-  }
-
-}
-
-.Header {
-  flex-wrap: wrap;
-}
-
-.HeaderButton {
-  margin: 10px;
-  width: auto;
-}
-
-p, h1, h2, li {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-@media (max-width: 768px) {
-
   .ProjectsContainer,
   .LinksContainer,
   .SkillsToolsContainer {
     padding: 0 15px;
   }
-}
-
-@media (max-width: 768px) {
-
+  .ProjectTitle {
+    font-size: 22px;
+  }
+  .ProjectDescription {
+    font-size: 16px;
+  }
+  .ProjectImageSet {
+    justify-content: center;
+  }
+  .ProjectImage {
+    max-width: 140px;
+  }
   .ProjectCard,
   .LinkBox,
   .Skills,
@@ -764,47 +583,28 @@ p, h1, h2, li {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    min-width: 0;
   }
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.ProjectDescription {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.About,
-.Projects,
-.Contact,
-.Profile {
-  scroll-margin-top: 100px;
-}
-
-.SkillsText,
-.ToolsText {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.AboutTextWrapper {
-  margin-bottom: 60px;
-}
-
-@media (max-width: 768px) {
-  .About {
-    padding-bottom: 120px;
+  .Contact {
+    padding-top: 120px;
   }
-}
-
-.Header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  .ContactHeader {
+    font-size: 30px;
+  }
+  .ContactText {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  .LinkHeader {
+    font-size: 22px;
+  }
+  .LinkIcon {
+    font-size: 30px;
+  }
+  .LinkDescription {
+    font-size: 16px;
+  }
+  .FooterText {
+    font-size: 13px;
+    padding: 0 20px;
+  }
 }

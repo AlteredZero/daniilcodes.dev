@@ -17,6 +17,10 @@ export default function Header() {
         onClick={() => (window.location.href = "https://daniilcodes.dev/")}
       />
 
+      <button className="HeaderButtonName" onClick={() => (window.location.href = "https://daniilcodes.dev/")}>
+        {"{Daniil Ovechkin}"}
+      </button>
+
       <button className="HeaderButton" onClick={() => scrollToSection("about")}>
         About
       </button>

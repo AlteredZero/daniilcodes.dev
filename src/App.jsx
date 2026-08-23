@@ -14,6 +14,7 @@ export default function App() {
       <Contact></Contact>
       <div className="Footer">
         <p className="FooterText">© 2026 Daniil Ovechkin. Built using HTML, CSS, and React + Vite.</p>
+        <p className="FooterText">This portfolio website was not made with the use of AI. I actually enjoy programming.</p>
       </div>
     </div>
   )
